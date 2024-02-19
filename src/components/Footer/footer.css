@@ -1,0 +1,163 @@
+.footer-section {
+  display: flex;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footer-img {
+  width: 100%;
+}
+.footer-section .footer-img img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -4px;
+}
+@media (max-width: 980px) {
+  .footer-section .footer-img img {
+    height: 800px;
+  }
+}
+.footer-section .footer-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+}
+@media (max-width: 980px) {
+  .footer-section .footer-wrapper {
+    flex-direction: column;
+  }
+}
+.footer-section .footer-wrapper .ft-left {
+  padding-right: 160px;
+  padding-left: 20px;
+  align-items: center;
+}
+@media (max-width: 1145px) {
+  .footer-section .footer-wrapper .ft-left {
+    padding-right: 120px;
+    padding-left: 80px;
+  }
+}
+@media (max-width: 980px) {
+  .footer-section .footer-wrapper .ft-left {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.footer-section .footer-wrapper .ft-left .ft-info {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.footer-section .footer-wrapper .ft-left .ft-info .icon {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--secondaryColor);
+}
+.footer-section .footer-wrapper .ft-left .ft-info span {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--whiteColor);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-section .footer-wrapper .ft-left .ft-info span a {
+  font-size: 15px;
+  color: var(--whiteColor);
+}
+.footer-section .footer-wrapper .ft-left .ft-info span a:hover {
+  color: var(--secondaryColor);
+}
+.footer-section .footer-wrapper .ft-left .ft-follow {
+  width: 100%;
+}
+.footer-section .footer-wrapper .ft-left .ft-follow .follow-option {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.footer-section .footer-wrapper .ft-left .ft-follow .follow-option li {
+  padding-right: 16px;
+}
+.footer-section .footer-wrapper .ft-left .ft-follow .follow-option li a {
+  display: flex;
+  padding: 8px 8px;
+  border-radius: 50%;
+  background-color: var(--whiteColor);
+  align-items: center;
+}
+.footer-section .footer-wrapper .ft-left .ft-follow .follow-option li a .icon {
+  font-size: 22px;
+  color: var(--blackColor);
+  cursor: pointer;
+}
+.footer-section .footer-wrapper .ft-left .ft-follow .follow-option li a .icon:hover {
+  color: var(--secondaryColor);
+}
+.footer-section .footer-wrapper .ft-right {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+.footer-section .footer-wrapper .ft-right .policy {
+  display: flex;
+  flex-direction: row;
+}
+.footer-section .footer-wrapper .ft-right .policy .policy-item {
+  width: 200px;
+}
+@media (max-width: 1120px) {
+  .footer-section .footer-wrapper .ft-right .policy .policy-item {
+    width: 150px;
+  }
+}
+@media (max-width: 980px) {
+  .footer-section .footer-wrapper .ft-right .policy .policy-item {
+    width: 200px;
+  }
+}
+.footer-section .footer-wrapper .ft-right .policy .policy-item ul li a {
+  color: var(--whiteColor);
+  font-size: 14px;
+  line-height: 36px;
+}
+.footer-section .footer-wrapper .ft-right .policy .policy-item ul li a:hover {
+  color: var(--secondaryColor);
+}
+.footer-section .footer-wrapper .ft-right .payment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.footer-section .footer-wrapper .ft-right .payment span {
+  color: var(--whiteColor);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer-section .footer-wrapper .ft-right .payment span::after {
+  content: "";
+  display: flex;
+  width: 180px;
+  padding-top: 4px;
+  border-bottom: 1px solid var(--whiteColor);
+}
+.footer-section .footer-wrapper .ft-right .payment img {
+  width: 50%;
+}
+@media (max-width: 980px) {
+  .footer-section .footer-wrapper .ft-right .payment img {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .footer-section .footer-wrapper .ft-right .payment img {
+    width: 80%;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,120 @@
+.header {
+    width: 100%;
+    
+
+    .header-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .header-top_container {
+            display: flex;
+            background-color: var(--primaryColor);
+            justify-content: center;
+        }
+
+        .header-top {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50%;
+            justify-content: end;
+            margin-right: 40px;
+
+            .header-top_left {
+                position: relative;
+                display: flex;
+
+                span {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 3.625rem;
+                    color: var(--whiteColor);
+                    letter-spacing: 0.0125rem;
+                    @media (max-width: 880px) {
+                        display: none; 
+                    }
+
+                    a {
+                        color: var(--whiteColor);
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--secondaryColor);
+                        }
+                    }
+                }
+
+                .space {
+                    padding: 0 0.5rem;
+                }
+            }
+
+            .header-top_right {
+                align-items: center;
+                margin-left: 0.875rem;
+                position: flex;
+                left: 90%;
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    line-height: 3.625rem;
+                    li {
+                        margin: 0 0.5rem;
+                        a {
+                            display: inline-block;
+                            width: 1.375rem;
+                            height: 1.375rem;
+                            text-align: center;
+                            line-height: 1.375rem;
+                            border-radius: 50%;
+                            background-color: var(--whiteColor);
+
+                            &:hover {
+                                border-radius: 50%;
+                                text-align: center;
+                            }
+
+                            i {
+                                font-size: 0.875rem;
+                                color: var(--primaryColor);
+
+                                &:hover {
+                                    color: var(--secondaryColor);
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        width: 8.125rem;
+        height: 8.125rem; 
+        display: flex;
+        position: absolute;
+        background: #ff5f15;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.3125rem;
+        top: 0;
+        z-index: 99;
+        left: 5%;
+        @media (max-width: 900px){
+            width: 5.125rem;
+            height: 5.125rem;
+
+            img{
+                object-fit:contain;
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+}

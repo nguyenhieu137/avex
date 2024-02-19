@@ -1,0 +1,382 @@
+.navbarSection{
+    width: 100%;
+    height: 58px;
+    background-color: var(--whiteColor);
+
+    .navbarContainer{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 34px;
+
+        .leftNav{
+            display: flex;
+            flex: 3;
+            flex-direction: row;
+            justify-content: center;
+            padding-left: 170px;
+        
+            @media (max-width: 1000px) {
+                display: none; // Hide the leftNav when the screen is less than 1000px
+            }
+
+            @media (min-width: 1001px) {
+                display: flex;
+            }
+
+
+            &.showNav {
+                @media (max-width: 1000px){
+                    display: grid;
+                    //flex-direction: column; // Change the layout to column for small screens
+                    position: absolute;
+                    top: 115px; // Height of the navbar
+                    right: 0;
+                    width: 35%; // Set the desired width
+                    height: 350px; // Set the height to 100% of the viewport height
+                    background-color: var(--whiteColor);
+                    z-index: 4;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    padding: 0;
+                    align-items: center;
+                }
+                @media (max-width: 800px){
+                    width: 40%;
+                    height: 250px;
+                                  
+                }
+            }
+            .navMenu{
+                position: relative;
+                display: inline-block;
+                @media (max-width: 1000px){
+                    padding-top: 20px;
+                    left: -70px;
+                }
+                @media (max-width: 800px){
+                    left: -50px;
+                    padding-top: 10px;
+                }
+                .subNavBtn{
+                    background-color: transparent;
+                    border-color: transparent;
+                    padding: 0 20px;
+                    
+                    a{
+                        position: relative;
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: var(--primaryColor);
+                        &:hover {
+                            color: var(--secondaryColor);
+                        }
+                        
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0px;
+                            left: 0;
+                            height: 2px;
+                            width: 0%;
+                            background: var(--secondaryColor);
+                            border-radius: 12px;
+                            transition: all 0.4s ease;
+                        }
+                        
+                        &:hover:before {
+                            width: 100%;
+                        }
+                        
+                        &.active {
+                            color: var(--secondaryColor);
+                        }
+                        @media (max-width: 800px){
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .subnav-content {
+                    // display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    align-items: center;
+                    text-align: center;
+                    width: 200px;
+                    left: 5px;
+                    top: 38px;
+                    padding-top: 10px;
+                    transition: all 0.3s ease-in-out 0s,
+                        visibility 0s linear 0.3s,
+                        z-index 0s linear 0.01s;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-5px);
+                    z-index: 4;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    @media (max-width: 1000px) {
+                        width: 180px;
+                        left: 110px;
+                        top: -4px;
+                    }
+
+                    @media (max-width: 800px){
+                        width: 130px;
+                    }
+                
+                    a {
+                        font-size: 13px;
+                        font-weight: 400;
+                        position: relative;
+                        color: var(--primaryColor);
+                        padding: 10px 0px;
+                        margin: 4px 27px;
+                        text-decoration: none;
+                        text-align: center;
+                        float: left;
+                        display: block;
+                
+                        &:hover {
+                            color: var(--secondaryColor);
+                        }
+                
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            bottom: 8px;
+                            left: 0;
+                            height: 2px;
+                            width: 0%;
+                            background: var(--secondaryColor);
+                            border-radius: 12px;
+                            transition: all 0.4s ease;
+                        }
+                
+                        &:hover:before {
+                            width: 100%;
+                        }
+                        @media (max-width: 800px){
+                            font-size: 8px;
+                        }
+                    }
+                }
+                
+                &:hover .subnav-content {
+                    display: block;
+                    opacity: 1;
+                    transform: translateY(0);
+                    background: var(--whiteColor);
+                    height: auto;
+                    visibility: visible;
+                    transition-delay: 0s, 0s, 0.3s;
+                    z-index: 3;
+                }
+            }
+        }
+        .rightNav{
+            
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+
+            .cart-icon{
+                font-size: 26px;
+                padding: 0 10px;
+                text-decoration: none;
+                color: var(--primaryColor);
+            }
+
+            .user{
+                display: flex;
+                align-items: center;
+
+                .user-icon{
+                    font-size: 26px;
+                    padding: 0 10px;
+                    text-decoration: none;
+                    color: var(--primaryColor);
+
+                    @media (max-width: 1000px) {
+                        display: none;
+                    }
+                }
+
+                .account{
+                    display: flex;
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 6%;
+                    background-color: var(--primaryColor);
+                    justify-content: center;
+                    align-items: center;
+                    &:hover{
+                        background-color: var(--secondaryColor);
+                    }
+
+                    a{
+                        font-size: 12px;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+            @media (max-width: 1000px) {
+                flex-direction: row; // Change the layout to column for rightNav items
+                justify-content: end;
+                align-items: center;
+            }
+        }
+    }
+    .menu-icon {
+        display: none; // Initially hide the menu icon
+    
+        @media (max-width: 1000px) {
+            display: block; // Display the menu icon when the screen is less than 1000px
+            font-size: 26px;
+            padding: 0 10px;
+            cursor: pointer;
+            order: 4;
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px; 
+    height: 100%; 
+    background-color: #fff; 
+    z-index: 1000;
+    overflow-x: hidden; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    right: -100%;
+    animation: slideIn 0.5s ease-in-out;
+    .modal-content {
+        
+        padding-top: 20px;
+        .avex{
+            display: flex;
+            justify-content: center;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 85px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                width: 74%;
+                height: 3px;
+                background: #ff5f15;
+            }
+
+            p{
+                font-size: 34px;
+                font-weight: 600;
+                color: #383838;
+            }
+        }
+
+        .close-modal-btn {
+            position: absolute;
+            top: 4px;
+            right: 0px;
+            cursor: pointer;
+            padding: 12px;
+            background-color: #ff5f15;
+            border: none;
+
+            .ic-close{
+                font-size: 18px;
+                color: var(--whiteColor);
+            }
+        }
+
+        .modal-links{
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            a{
+                font-size: 12px;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--primaryColor);
+                padding: 20px 20px;
+                &:hover {
+                    color: var(--secondaryColor);
+                }
+            
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    height: 2px;
+                    width: 0%;
+                    background: var(--secondaryColor);
+                    border-radius: 12px;
+                    transition: all 0.4s ease;
+                }
+            
+                &:hover:before {
+                    width: 100%;
+                }
+            
+                &.active {
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+    }
+}
+
+.modal.show {
+    right: 0;
+    
+}
+
+@keyframes slideIn {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: -300px;
+    }
+}
+
+.closing {
+    animation: slideOut 0.5s ease-in-out;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.modal.show,
+.modal-overlay.show {
+    display: block;
+
+}
+

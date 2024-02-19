@@ -1,0 +1,100 @@
+.breadcrumbs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs .breadcrumbs-img {
+  width: 100%;
+}
+@media (max-width: 980px) {
+  .breadcrumbs .breadcrumbs-img {
+    width: 90%;
+  }
+}
+.breadcrumbs .breadcrumbs-img img {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  clip: rect(0, 1920px, 496px, 0);
+}
+@media (max-width: 980px) {
+  .breadcrumbs .breadcrumbs-img img {
+    height: 350px;
+  }
+}
+.breadcrumbs .crumb {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.breadcrumbs .crumb .crumb-title {
+  display: flex;
+  justify-content: center;
+}
+.breadcrumbs .crumb .crumb-title h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--whiteColor);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  line-height: normal;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .breadcrumbs .crumb .crumb-title h1 {
+    font-size: 30px;
+  }
+}
+.breadcrumbs .crumb .crumb-title h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 154px;
+  height: 3px;
+  background: #ff5f15;
+}
+.breadcrumbs .crumb .crumb-link {
+  display: flex;
+  justify-content: center;
+}
+.breadcrumbs .crumb .crumb-link .home-link {
+  text-decoration: none;
+  color: var(--whiteColor);
+  font-size: 26px;
+}
+.breadcrumbs .crumb .crumb-link .home-link:hover {
+  color: var(--secondaryColor);
+}
+@media (max-width: 768px) {
+  .breadcrumbs .crumb .crumb-link .home-link {
+    font-size: 14px;
+  }
+}
+.breadcrumbs .crumb .crumb-link p {
+  color: var(--whiteColor);
+  font-size: 28px;
+  margin: 0 10px;
+}
+@media (max-width: 768px) {
+  .breadcrumbs .crumb .crumb-link p {
+    font-size: 14px;
+  }
+}
+.breadcrumbs .crumb .crumb-link .current-link {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-size: 26px;
+}
+@media (max-width: 768px) {
+  .breadcrumbs .crumb .crumb-link .current-link {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=breadcrumbs.css.map */

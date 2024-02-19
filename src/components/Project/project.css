@@ -1,0 +1,529 @@
+.project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F3F3;
+  padding-bottom: 100px;
+}
+.project-section .project-container {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+}
+@media (max-width: 1200px) {
+  .project-section .project-container {
+    width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .project-section .project-container {
+    width: 800px;
+  }
+}
+@media (max-width: 1000px) {
+  .project-section .project-container {
+    width: 900px;
+  }
+}
+@media (max-width: 950px) {
+  .project-section .project-container {
+    width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .project-section .project-container {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .project-section .project-container {
+    width: 340px;
+  }
+}
+.project-section .project-container .filter-section {
+  display: flex;
+  flex-direction: column;
+  width: 278px;
+  height: 400px;
+  border-radius: 4px;
+  margin-right: 15px;
+  align-items: center;
+  background-color: var(--whiteColor);
+}
+.project-section .project-container .filter-section.modal-open {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .project-section .project-container .filter-section {
+    width: 212px;
+  }
+}
+@media (max-width: 1000px) {
+  .project-section .project-container .filter-section {
+    display: none;
+  }
+}
+.project-section .project-container .filter-section .filter-brand {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  padding: 22px 15px;
+}
+@media (max-width: 1200px) {
+  .project-section .project-container .filter-section .filter-brand {
+    width: 200px;
+  }
+}
+.project-section .project-container .filter-section .filter-brand .filter-title {
+  margin-bottom: 15px;
+}
+.project-section .project-container .filter-section .filter-brand .filter-title h2 {
+  margin: 0px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #d8d5d5;
+}
+.project-section .project-container .filter-section .filter-brand .filter-title::after {
+  content: "";
+  position: absolute;
+  width: 6%;
+  height: 2px;
+  background: #ff5f15;
+}
+.project-section .project-container .filter-section .filter-brand .searchbox {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.project-section .project-container .filter-section .filter-brand .searchbox input {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+  height: 40px;
+  min-height: 30px;
+  padding: 0 35px 0 15px;
+  font-weight: 400;
+  max-width: 100%;
+  border: none;
+  display: block;
+  background: #f5f6f7;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #888888;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.project-section .project-container .filter-section .filter-brand .searchbox .icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.project-section .project-container .filter-section .filter-brand .searchbox .icon:hover {
+  color: #ff5f15;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  line-height: 28px;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item input[type=checkbox] {
+  display: none;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item label {
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+  color: #727272;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item label:hover {
+  color: #ff5f15;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item label::after {
+  content: "";
+  display: none;
+  width: 5px;
+  height: 3px;
+  border: 1px solid #fff;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  left: 3px;
+  top: 11px;
+  transform: rotate(-50deg);
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item input[type=checkbox]:checked + label::before {
+  background-color: #ff5f15;
+  border-color: #ff5f15;
+}
+.project-section .project-container .filter-section .filter-brand .filter-check .check-item input[type=checkbox]:checked + label::after {
+  display: block;
+}
+.project-section .project-container .filter-section .sidebar-banner {
+  width: 278px;
+  margin-top: 20px;
+}
+@media (max-width: 1200px) {
+  .project-section .project-container .filter-section .sidebar-banner {
+    width: 212px;
+  }
+}
+.project-section .project-container .filter-section .sidebar-banner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-section .project-container .product-container {
+  width: 870px;
+  margin-left: 15px;
+}
+@media (max-width: 1200px) {
+  .project-section .project-container .product-container {
+    width: 697px;
+  }
+}
+@media (max-width: 1000px) {
+  .project-section .project-container .product-container {
+    width: 870px;
+  }
+}
+@media (max-width: 950px) {
+  .project-section .project-container .product-container {
+    width: 700px;
+  }
+}
+.project-section .project-container .product-container .product-title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+}
+.project-section .project-container .product-container .product-grid {
+  width: 100%;
+  align-items: center;
+  gap: 0px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper {
+  --auto-grid-min-size: 13rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-items: center;
+  row-gap: 26px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+@media (max-width: 1000px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper {
+    --auto-grid-min-size: 16rem;
+  }
+}
+@media (max-width: 785px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper {
+    --auto-grid-min-size: 22rem;
+  }
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+  width: 270px;
+  height: 260px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: var(--whiteColor);
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+    width: 219px;
+  }
+}
+@media (max-width: 1000px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+    width: 280px;
+  }
+}
+@media (max-width: 950px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+    width: 290px;
+  }
+}
+@media (max-width: 785px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+    width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .project-section .project-container .product-container .product-grid .grid-wrapper .product-card {
+    width: 340px;
+  }
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card .card-text {
+  width: 100%;
+  padding: 15px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card .card-text span {
+  color: #727272;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card .card-text span:hover {
+  color: #ff5f15;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card .card-text p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #5b5b5b;
+  cursor: pointer;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card .card-text p:hover {
+  color: #ff5f15;
+}
+.project-section .project-container .product-container .product-grid .grid-wrapper .product-card .card-text p span {
+  color: #ff5f15;
+  font-size: 16px;
+}
+.project-section .open-modal-button {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .project-section .open-modal-button {
+    display: block;
+  }
+}
+.project-section .sidebar-modal {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  overflow-y: auto;
+  animation: slideIn 0.5s ease-in-out;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 22px 15px;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-title {
+  margin-bottom: 15px;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-title h2 {
+  margin: 0px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #d8d5d5;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-title::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background: #ff5f15;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .searchbox {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .searchbox input {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+  height: 40px;
+  min-height: 30px;
+  padding: 0 35px 0 15px;
+  font-weight: 400;
+  max-width: 100%;
+  border: none;
+  display: block;
+  background: #f5f6f7;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #888888;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .searchbox .icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .searchbox .icon:hover {
+  color: #ff5f15;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  line-height: 28px;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item input[type=checkbox] {
+  display: none;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item label {
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+  color: #727272;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item label:hover {
+  color: #ff5f15;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item label::after {
+  content: "";
+  display: none;
+  width: 5px;
+  height: 3px;
+  border: 1px solid #fff;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  left: 3px;
+  top: 11px;
+  transform: rotate(-50deg);
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item input[type=checkbox]:checked + label::before {
+  background-color: #ff5f15;
+  border-color: #ff5f15;
+}
+.project-section .sidebar-modal .modal-content .filter-section .filter-brand .filter-check .check-item input[type=checkbox]:checked + label::after {
+  display: block;
+}
+.project-section .sidebar-modal .modal-content .close-modal-button {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #ff5f15;
+  border: none;
+}
+.project-section .sidebar-modal .modal-content .close-modal-button .icon {
+  color: var(--whiteColor);
+  font-size: 18px;
+}
+.project-section .sidebar-modal.open {
+  right: 0;
+}
+.project-section .open-modal-button {
+  position: fixed;
+  top: 400px;
+  right: 0;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #ff5f15;
+  border: none;
+  transition: right 0.5s ease-in-out;
+}
+.project-section .open-modal-button .icon {
+  color: var(--whiteColor);
+  font-size: 18px;
+}
+.project-section .open-modal-button.closing {
+  animation: slideOut 0.5s ease-in-out;
+}
+@keyframes slideIn {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes slideOut {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -300px;
+  }
+}
+.project-section .closing {
+  animation: slideOut 0.5s ease-in-out;
+}/*# sourceMappingURL=project.css.map */

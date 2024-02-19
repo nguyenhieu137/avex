@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------- Default Styling --------*/
+
+:root{
+  --primaryColor: #040F28;
+  --secondaryColor: #FF5F15;
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: #212529;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
