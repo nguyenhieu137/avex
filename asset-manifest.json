@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/avex/static/css/main.9c4c513d.css",
+    "main.js": "/avex/static/js/main.0d1d5d15.js",
+    "static/media/hero-banner.jpg": "/avex/static/media/hero-banner.746a9eb2e0a8fb45c933.jpg",
+    "static/media/bg_about.png": "/avex/static/media/bg_about.b43d9b84a200b62cf8e3.png",
+    "static/media/bg_footer.jpg": "/avex/static/media/bg_footer.bd24508c722951d47a4a.jpg",
+    "index.html": "/avex/index.html",
+    "main.9c4c513d.css.map": "/avex/static/css/main.9c4c513d.css.map",
+    "main.0d1d5d15.js.map": "/avex/static/js/main.0d1d5d15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c4c513d.css",
+    "static/js/main.0d1d5d15.js"
+  ]
+}
